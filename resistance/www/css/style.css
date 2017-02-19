@@ -1,6 +1,12 @@
 /* Empty. Add your own CSS if you like */
 
+.button-bottom{
+  margin-top: 30vh;
+  margin-left: 30vw;
+  width : 40vw;
+  height: 20vh;
 
+}
 
 .button_left{
   margin-left: 20vw; /* left margin = 25 % of viewport width */
