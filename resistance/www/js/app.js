@@ -28,16 +28,28 @@ var starter = angular.module('starter', ['ionic'])
     $stateProvider // $stateProvider is used
       .state('index', {
         url: "/",
-        abstract: true,
+        //abstract: true,
         templateUrl: 'index.html'
       })
       .state('goodIdentity', {
-        url: "/assignGood.html",
-        abstract: true,
-        templateUrl: 'templates/assignGood.html'
+        url: "/assignGood",
+        //abstract: true,
+        templateUrl: 'assignGood.html'
+      })
+      .state('badIdentity', {
+        url: "/assignBad",
+        //abstract: true,
+        templateUrl: 'assignBad.html'
+      })
+      .state('afterVote', {
+        url: "/afterVote",
+
+        templateUrl: 'afterVote.html'
+
+
       });
 
-    //$urlRouterProvider.otherwise('index.html');
+    $urlRouterProvider.otherwise('index.html');
   });
 
 
@@ -46,7 +58,15 @@ starter.controller("startGameCtrl", function($scope, $ionicModal, $ionicLoading,
   $scope.onSubmit = function () {
     console.log("aa");
 
-    $state.go('goodIdentity');
+    $state.go('badIdentity');
 
+  }
+});
+
+
+starter.controller("voteCtrl", function ($scope, $ionicModal, $ionicLoading, $state) {
+  $scope.onSubmitMissionY = function () {
+    console.log("bb");
+    $state.go('afterVote');
   }
 });

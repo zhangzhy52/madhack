@@ -40,20 +40,21 @@
         <h1 class="title">Welcome to the Resistance</h1>
       </ion-header-bar>
       <ion-content>
-        <button class="ion-button" color="secondary">Create a room</button>
-
+        <button class="button_left" >Create a room</button>
+        <p>
+          <a href="afterVote.html"> Link text</a>
+        </p>
         <div class="bottom">
-          <div style ="float: left; width:50%;">
+          <div style =" margin-left:20vw;width:60%;">
             <label class = "item item-input">
               <input type = "text" name = "roomNumber" id = "room"
                      ng-model = "$parent.roomNumber" placeholder = "Room Number">
             </label>
           </div>
         </div>
-<p>
-        <a href="assignGood.html"> Link text</a>
-</p>
-        <button class= "ion-button" ng-click="onSubmit()"> Join a room </button>
+
+
+        <button class= "button_right" ng-click="onSubmit()"> Join a room </button>
       </ion-content>
     </ion-pane>
   </body>

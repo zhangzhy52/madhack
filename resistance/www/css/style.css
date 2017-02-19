@@ -1,16 +1,33 @@
 /* Empty. Add your own CSS if you like */
-.body {
-  background-color: darkgreen;
-}
-.ion-button{
-  margin-left: 50px; /* left margin = 25 % of viewport width */
-  margin-right: 0vw; /* right margin = 25 % of viewport width */
-  width: 50vw; /* width = 50 % of viewport width */
-  height: 10vw; /* height = 10 % of viewport width */
+
+
+
+.button_left{
+  margin-left: 20vw; /* left margin = 25 % of viewport width */
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+
+  width: 60vw; /* width = 50 % of viewport width */
+  height: 20vh; /* height = 10 % of viewport width */
   background-color: lightblue; /* background color of button becomes light blue */
 }
-p{
-  background-color: coral;
+.button_right{
+  margin-left: 20vw; /* left margin = 25 % of viewport width */
+  width: 60vw; /* width = 50 % of viewport width */
+  height: 20vh; /* height = 10 % of viewport width */
+  background-color: orangered; /* background color of button becomes light blue */
+}
+
+/* vote.html */
+.button-voteY{
+  width : 100vw;
+  height: 50vh;
+  background-color : green;
+}
+.button-voteN{
+  width : 100vw;
+  height: 50vh;
+  background-color : red;
 }
 
 
