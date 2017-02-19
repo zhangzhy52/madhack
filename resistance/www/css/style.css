@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+.body {
+  background-color: darkgreen;
+}
+.ion-button{
+  margin-left: 50px; /* left margin = 25 % of viewport width */
+  margin-right: 0vw; /* right margin = 25 % of viewport width */
+  width: 50vw; /* width = 50 % of viewport width */
+  height: 10vw; /* height = 10 % of viewport width */
+  background-color: lightblue; /* background color of button becomes light blue */
+}
+p{
+  background-color: coral;
+}
+
+
+
